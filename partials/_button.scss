@@ -1,0 +1,21 @@
+$bgButtonColor: (
+  primo: #0e6cff,
+  secondo: #ff8700,
+  terzo: #4caf50,
+);
+
+@each $key, $value in $bgButtonColor {
+  .bgButton#{$key} {
+    background-color: $value;
+    cursor: pointer;
+    border: none;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    &:hover {
+      width: 300px;
+      height: 150px;
+      box-shadow: 0px 0px 20px;
+    }
+  }
+}

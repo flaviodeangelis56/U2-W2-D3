@@ -1,0 +1,43 @@
+@import "./partials/reset";
+@import "./partials/color";
+@import "./partials/font";
+@import "./partials/spazziature";
+@import "./partials/mixin";
+@import "./partials/button";
+@import "./partials/animazioni";
+body {
+  font-family: $primaryFont;
+}
+nav {
+  width: 100%;
+  img {
+    width: 50px;
+  }
+}
+
+header {
+  background-color: $colorBgHero;
+  div {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 200px;
+      &:hover {
+        @include floating(2px);
+      }
+    }
+  }
+  h1 {
+    @include title-big;
+  }
+}
+div {
+  display: flex;
+  justify-content: space-around;
+  .flex-img {
+    width: 200px;
+    &:hover {
+      @include floating();
+    }
+  }
+}

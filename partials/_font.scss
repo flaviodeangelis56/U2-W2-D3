@@ -1,0 +1,6 @@
+$primaryFont: Helvetica, sans-serif;
+
+@mixin title-big() {
+  font-size: 300%;
+  font-weight: bold;
+}
